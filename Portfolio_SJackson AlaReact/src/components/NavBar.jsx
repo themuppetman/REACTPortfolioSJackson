@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
-import NavBar from './NavBar';
-import { Container, Nav } from 'react-bootstrap';
+import React from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
-function Portfolio() {
-  const [portfolio, setPortfolio] = useState([]);
+export const NavBar = () => {
 
-  return (
-    <>
-      <NavBar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    return (
+        <NavBar collapseOnSelect expand="lg" className="bg-body-tertiary">
         <Container>
           <NavBar.Brand href="#Seth">Seth Jackson</NavBar.Brand>
           <NavBar.Toggle aria-controls="responsive-navbar-nav" />
@@ -28,13 +25,7 @@ function Portfolio() {
           </NavBar.Collapse>
         </Container>
       </NavBar>
-
-      <div className="portfolio">
-        <h1>Portfolio</h1>
-        <p>Some of my work...</p>
-      </div>
-    </>
-  );
+    );
 }
 
-export default Portfolio;
+export default NavBar;
