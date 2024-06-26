@@ -5,6 +5,21 @@
   text-align: center;
 }
 
+.custom_navbar {
+  background-color: #bc4949;
+  color: #fdf9f9;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
 .logo {
   height: 6em;
   padding: 1.5em;

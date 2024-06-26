@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 export const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="custom_navbar" class="container-xxl" >
       <Container>
         <Navbar.Brand href="#Seth">Seth Jackson</Navbar.Brand>
           <Nav className="me-auto">
