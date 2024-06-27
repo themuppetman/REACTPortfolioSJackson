@@ -1,27 +1,138 @@
-import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import React from "react";
+import styled from "styled-components";
 
-export const NavBar = () => {
+const StyledNavbar = styled.div`
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+  & .div {
+    background: linear-gradient(
+      180deg,
+      rgb(0, 0, 0) 0%,
+      rgb(107.93, 105.1, 105.1) 25.07%,
+      rgb(0, 0, 0) 49.91%,
+      rgb(107.93, 105.1, 105.1) 75.93%,
+      rgb(0, 0, 0) 100%
+    );
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid;
+    border-color: #6b6969;
+    border-radius: 20px;
+    height: 200px;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;x\
+  }
+
+  & .logo {
+    height: 175px;
+    left: 345px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    width: 175px;
+  }
+
+  & .text-wrapper {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      180deg,
+      rgb(18.69, 193.67, 67.68) 0%,
+      rgba(116, 48.83, 147.61, 0.55) 25%,
+      rgb(118.65, 116.41, 228.25) 50%,
+      rgb(153.23, 148.76, 41.38) 75%,
+      rgb(177.54, 33.03, 171.76) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    font-family: "Lalezar-Regular", Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    height: 75px;
+    left: 25px;
+    letter-spacing: 3.36px;
+    line-height: normal;
+    position: absolute;
+    text-fill-color: transparent;
+    top: 97px;
+  }
+
+  & .text-wrapper-2 {
+    color: #24b95f;
+    font-family: "Paytone One-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    height: 40px;
+    left: 709px;
+    letter-spacing: 1.68px;
+    line-height: normal;
+    position: absolute;
+    top: 125px;
+    width: 211px;
+  }
+
+  & .text-wrapper-3 {
+    color: #9b24b9;
+    font-family: "Paytone One-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    height: 40px;
+    left: 951px;
+    letter-spacing: 1.68px;
+    line-height: normal;
+    position: absolute;
+    top: 125px;
+    width: 136px;
+  }
+
+  & .text-wrapper-4 {
+    color: #a7a110;
+    font-family: "Paytone One-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    height: 40px;
+    left: 1118px;
+    letter-spacing: 1.68px;
+    line-height: normal;
+    position: absolute;
+    top: 125px;
+    width: 125px;
+  }
+
+  & .text-wrapper-5 {
+    color: #bc3960;
+    font-family: "Paytone One-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    height: 40px;
+    left: 1273px;
+    letter-spacing: 1.68px;
+    line-height: normal;
+    position: absolute;
+    top: 125px;
+    width: 126px;
+  }
+`;
+
+export const Navbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="custom_navbar" class="container-xxl" >
-      <Container>
-        <Navbar.Brand href="#Seth">Seth Jackson</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#TTK">Things To Know</Nav.Link>
-            <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#Contact">Connect</Nav.Link>
-            <Nav.Link href="#Resume">Resume</Nav.Link>
-          </Nav>
-          {/* <span className="navbar-text">
-            <div className="social-links">
-              <a href="#"><img src={} alt="" /></a>
-              <a href="#"><img src={} alt="" /></a>
-              <a href="#"><img src={} alt="" /></a>
-            </div>
-          </span> */}
-      </Container>
-    </Navbar>
+    <StyledNavbar>
+      <div className="div">
+        <img className="logo" alt="Logo" src="logo.png" />
+        <div className="text-wrapper">Seth Jackson</div>
+        <div className="text-wrapper-2">About this guy</div>
+        <div className="text-wrapper-3">Portfolio</div>
+        <div className="text-wrapper-4">Connect</div>
+        <div className="text-wrapper-5">Resume</div>
+      </div>
+    </StyledNavbar>
   );
-}
+};
 
-export default NavBar;
+
+
+export default Navbar;
