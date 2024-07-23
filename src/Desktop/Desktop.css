@@ -1,0 +1,327 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.desktop {
+  width: 100%;
+  padding: 9px 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 500vh;
+  box-shadow: var(--box-shadow);
+}
+
+.nav-bar {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(90deg, rgba(58, 150, 122, 1) 0%, rgba(162, 13, 13, 1) 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 12px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+.seth-jackson {
+  color: linear-gradient(90deg, rgba(58, 150, 122, 1) 0%, rgba(162, 13, 13, 1) 100%);;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.07em;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.about {
+  left: 50%;
+  top: 113px;
+  transform: translateX(-50%);
+  flex-direction: column;
+}
+
+.work {
+  left: 50%;
+  top: 113px;
+  transform: translateX(-50%);
+}
+
+.contact {
+  left: 50%;
+  top: 113px;
+  transform: translateX(-50%);
+}
+
+.resume {
+  left: 50%;
+  top: 113px;
+  transform: translateX(-50%);
+}
+
+.logo {
+  margin: 15px;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  max-width: 135px;
+  max-height: 135px;
+  position: relative;
+  left: 31px;
+  top: 0;
+  object-fit: cover;
+}
+
+.seth-jackson {
+  left: 10vw;
+  top: 102px;
+  width: 60vw;
+  height: auto;
+}
+
+.body2 {
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 1580px;
+  height: auto;
+  position: relative;
+}
+
+.about2 {
+  background: #2f2824;
+  border-radius: 20px;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 20px;
+  box-shadow: 12px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+.from-musical-performer-to-film-school-graduate-to-voice-actor-to-developer-and-designer-seth-has-many-hats-this-combined-with-many-years-of-hospitality-and-team-experience-seth-can-work-with-anyone-and-connect-to-any-project-at-hand-he-thrives-in-challenging-situations-and-loves-to-learn {
+  color: #92dac4;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: var(--font-size-large);
+  letter-spacing: 0.07em;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work2 {
+  background: linear-gradient(180deg, rgba(149, 31, 27, 1) 0%, rgba(77, 126, 103, 1) 100%);
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  position: relative;
+  box-shadow: 12px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-work {
+  grid-column: span 2;
+  background: linear-gradient(180deg, rgba(149, 31, 27, 1) 0%, rgba(77, 126, 103, 1) 100%);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+}
+
+.work-2, .work-3, .work-4, .work-5 {
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.music-search-site, .coding-quiz-label, .weather-dash-label, .groove-guide-db-label, .pw-gen-label {
+  background: #4d7e67;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 238px;
+  height: auto;
+}
+
+.music-search-site2, .coding-quiz-text, .weather-dash-text, .groove-guide-db-text, .pw-gen-text {
+  color: #951f1b;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  width: 100%;
+  max-width: 238px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact2 {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 1436px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.email, .phone, .linked-in, .resume2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  width: 100%;
+  max-width: 296px;
+  height: 54px;
+  display: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+  }
+
+  .about, .work, .contact, .resume {
+    font-size: 1.25rem;
+  }
+
+  .seth-jackson {
+    font-size: 1.25rem;
+  }
+
+  .body2 {
+    flex-direction: column;
+  }
+
+  .work2 {
+    flex-direction: column;
+  }
+
+  .main-work, .work-2, .work-3, .work-4, .work-5 {
+    width: 100%;
+  }
+
+  .music-search-site, .coding-quiz-label, .weather-dash-label, .groove-guide-db-label, .pw-gen-label {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .music-search-site2, .coding-quiz-text, .weather-dash-text, .groove-guide-db-text, .pw-gen-text {
+    font-size: 1rem;
+  }
+
+  email, .phone, .linked-in, .resume2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .logo {
+    width: 20vw;
+    height: 20vw;
+    }
+    
+    .nav-links a {
+    font-size: 1rem;
+    }
+    
+    .seth-jackson { 
+    font-size: 1rem;
+    }
+    
+    .email, .phone, .linked-in, .resume2 {
+    font-size: 1.25rem;
+    }
+}
