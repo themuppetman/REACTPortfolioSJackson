@@ -12,7 +12,7 @@ body {
     position: relative;
     justify-content: center; 
     align-items: center;
-    display: block;
+    display: flex;
 }
 
 
@@ -31,24 +31,27 @@ header {
     box-shadow: 0 0 10px 5px #333;
   }
 
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); 
-  }
 
-  section {
-    margin: 20px 0;
-    display: block;
-    width: 100%;
+
+  .work {
+    display: flex;
+    min-width: min-content;
+    max-width: 800px;
     border-radius: 25px;
     justify-content: center;
-  } 
+    flex-wrap: wrap;
+  }
 
   .work-1 {
     display: block;
-    width: 100%;
-    min-width: fit-content;
+    max-width: 800px;
+    border-radius: 25px;
+    justify-content: center;
+  }
+
+  .work-2.work-3 {
+    display: flex;
+    max-width: 800px;
     border-radius: 25px;
     justify-content: center;
   }
@@ -88,6 +91,18 @@ header {
     margin-top: 5px;
   }
 
+  footer {
+    display: flexbox;
+    margin: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+    min-width: fit-content;
+    border-radius: 25px;
+    justify-content: center;
+  }
+
   p {
     margin-left: 75px;
     margin-right: 75px;
@@ -97,6 +112,16 @@ header {
     text-align: justify;
   }
   
+  .contact-links {
+    margin: 20px;
+    color:aliceblue;
+    text-decoration: none;
+    font-size: large;
+    display: flex-box;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
 
   nav ul {
     list-style: none;
@@ -121,13 +146,17 @@ header {
   }
 
   .img-1 {
-    margin: 0;
     display: block;
-    width: 100%;
-    min-width: fit-content;
-    min-width: fit-content;
-    max-height: 50vh;
+    max-width: 800px;
     border-radius: 25px;
+    justify-content: center;
+  }
+
+  .img-2 {
+    display: flex;
+    max-width: 800px;
+    border-radius: 25px;
+    justify-content: center;
   }
   
   footer {
@@ -159,5 +188,39 @@ header {
     color: red;
     font-size: 12px;
   }
+
+  .top-rectangle {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.rectangle {
+    background-color: #2196F3;
+    color: white;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+  }
+
+  .rectangle {
+      margin-bottom: 10px;
+  }
+}
+
+
 
   
